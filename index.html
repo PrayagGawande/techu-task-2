@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <p class="display-4 my-3 py-2">Users</p>
+        <hr />
+
+        <div class="row">
+            <div class="col-3 ">
+                <div id="usersList" class="list-group"></div>
+            </div>
+            <div class="col">
+                <div id="tabsDiv">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <!-- Profile Link -->
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                aria-controls="profile-tab-pane" aria-selected="true">Profile</button>
+                        </li>
+                        <!-- Posts Link -->
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="posts-tab" data-bs-toggle="tab"
+                                data-bs-target="#posts-tab-pane" type="button" role="tab" aria-controls="posts-tab-pane"
+                                aria-selected="true">Posts</button>
+                        </li>
+                        <!-- Todos Link -->
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="todos-tab" data-bs-toggle="tab"
+                                data-bs-target="#todos-tab-pane" type="button" role="tab" aria-controls="todos-tab-pane"
+                                aria-selected="true">Todos</button>
+                        </li>
+                        <!-- albums Link -->
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="albums-tab" data-bs-toggle="tab"
+                                data-bs-target="#albums-tab-pane" type="button" role="tab"
+                                aria-controls="albums-tab-pane" aria-selected="true">Albums</button>
+                        </li>
+                    </ul>
+                    <!-- Profile Tab -->
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="profile-tab-pane" role="tabpanel"
+                            aria-labelledby="profile-tab" tabindex="0">
+                            <div class="mt-2" id="cardDiv"></div>
+                        </div>
+                    </div>
+                    <!-- Posts Tab -->
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade" id="posts-tab-pane" role="tabpanel" aria-labelledby="posts-tab"
+                            tabindex="0">
+                            <div class="mt-2" id="postsDiv"></div>
+                        </div>
+                    </div>
+                    <!-- Todos Tab -->
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade" id="todos-tab-pane" role="tabpanel" aria-labelledby="todos-tab"
+                            tabindex="0">
+                            <div class="mt-2" id="todosDiv">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- albums Tab -->
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade" id="albums-tab-pane" role="tabpanel" aria-labelledby="albums-tab"
+                            tabindex="0">
+                            <div class="mt-2" id="albumsDiv"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
